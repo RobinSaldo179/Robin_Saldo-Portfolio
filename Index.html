@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Saldo Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Portfolio</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="theme-switch">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <section id="home" class="parallax-section">
+        <div class="hero glass-effect" data-aos="fade-up">
+            <h1>Welcome to My Portfolio</h1>
+            <p>BSIT Professional | Video Editor</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="images/imagesprofile.jpg.png" alt="Robin Saldo">
+                </div>
+            </div>
+            <div class="about-text">
+                <p>I am currently a 3rd year BSIT student at Cavite State University - Bacoor Campus, passionate about both technology and creative video editing. I combine my academic knowledge with practical experience in multimedia content creation.</p>
+                <p>My journey includes developing mobile applications using Flutter and Firebase, managing web development projects, and creating engaging gaming content. I specialize in video editing for gaming channels, web development, and mobile app development, constantly learning and growing in both technical and creative fields.</p>
+            </div>
+            <a href="CV RESUME/Robin Saldo CV Resume (1).pdf" download class="cv-button">
+                <i class="fas fa-download"></i>
+                Download CV Resume
+            </a>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">3rd</div>
+                    <div class="stat-label">Year BSIT Student</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Years Video Editing</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">89%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills-container" data-aos="fade-up">
+            <div class="skill-category">
+                <h3>IT Skills</h3>
+                <ul>
+                    <li>
+                        Web Development
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </li>
+                    <li>
+                        Database Management
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </li>
+                    <li>
+                        Network Administration
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </li>
+                    <li>
+                        Programming (Java, Python, PHP)
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="88"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Video Editing</h3>
+                <ul>
+                    <li>
+                        Adobe Premiere Pro
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="95"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </li>
+                    <li>
+                        After Effects
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </li>
+                    <li>
+                        Color Grading
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </li>
+                    <li>
+                        Motion Graphics
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="82"></div>
+                        </div>
+                        <span class="skill-percentage">82%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="IT">IT Projects</button>
+            <button class="filter-btn" data-filter="Video">Video Projects</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Projects will be loaded via JavaScript -->
+        </div>
+    </section>
+
+    <section id="certifications" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="cert-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Web Development Certificate">
+                <i class="fas fa-certificate"></i>
+                <h3>Web Development</h3>
+                <p>Full Stack Development - ArcesShop</p>
+                <span class="cert-date">2023</span>
+            </div>
+            <div class="cert-card">
+                <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80" alt="Video Editing Certificate">
+                <i class="fas fa-award"></i>
+                <h3>Video Editing</h3>
+                <p>Professional Video Editing - SupPOgo</p>
+                <span class="cert-date">2023</span>
+            </div>
+            <div class="cert-card">
+                <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=800&q=80" alt="Digital Marketing Certificate">
+                <i class="fas fa-medal"></i>
+                <h3>Digital Marketing</h3>
+                <p>Google Digital Marketing</p>
+                <span class="cert-date">2024 - 2025</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" data-aos="fade-up">
+        <h2>Client Testimonials</h2>
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <div class="quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">"Exceptional work on our website. Professional and creative!"</p>
+                <div class="client-info">
+                    <img src="https://source.unsplash.com/random/100x100/?person" alt="Client">
+                    <div>
+                        <h4>Roland Jude Imperial</h4>
+                        <p>CEO, Tech Company</p>
+                    </div>
+                </div>
+            </div>
+            <!-- More testimonials will be added via JavaScript -->
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:robinsaldo06@gmail.com">robinsaldo06@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+639123456789">+63 927 695 4573</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@arcessgaming179" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/robin.saldo/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ArcessGaming179" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    </div>
+
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <!-- Project details will be loaded here -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
